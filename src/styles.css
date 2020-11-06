@@ -1,0 +1,19 @@
+.dark-mode {
+  --color-bg-background: #0e182a;
+  --color-nav-right-text: #ee5e5b;
+  --color-white: #fff;
+  --color-navigation-text: #90a4ae;
+  --color-grey: #285065;
+}
+.light-mode {
+  --color-navigation-text: #8584a4;
+  --color-bg-background: #fff;
+  --color-nav-right-text: #ee5e5b;
+  --color-white: #fff;
+  --color-grey: #e8e8e8;
+  --color-black: #0b0948;
+}
+
+body {
+  background-color: var(--color-bg-background);
+}
