@@ -46,15 +46,17 @@ const SignUpStyle = styled.a`
 `;
 
 const ButtonStyle = styled(Button)`
-  background: none;
+  background-color: transparent !important;
   border: none;
   outline: none;
   padding: 0;
   cursor: pointer;
-  color: ${({ mode }) => (mode === 'light-mode' ? '#ffc107' : '#fff')};
+  color: ${({ mode }) =>
+    mode === 'light-mode' ? '#ffc107' : '#fff'}!important;
   display: flex;
   align-items: center;
   margin-left: 1rem;
+  font-size: 2rem;
 `;
 
 export const Navigation = () => {

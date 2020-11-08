@@ -1,19 +1,34 @@
 .dark-mode {
   --color-bg-background: #0e182a;
-  --color-nav-right-text: #ee5e5b;
-  --color-white: #fff;
+  --color-white: #f7fafc;
   --color-navigation-text: #90a4ae;
   --color-grey: #285065;
 }
 .light-mode {
   --color-navigation-text: #8584a4;
   --color-bg-background: #fff;
-  --color-nav-right-text: #ee5e5b;
   --color-white: #fff;
   --color-grey: #e8e8e8;
-  --color-black: #0b0948;
 }
 
 body {
   background-color: var(--color-bg-background);
+  --color-light-grey: #c2c2d1;
+  --color-black: #0b0948;
+  --color-nav-right-text: #ee5e5b;
+  --color-orange-light: #ffc1c1;
+  --color-light-green: #ddfff5;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
 }

@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 import useToggleTheme from '../hooks/useToggleTheme';
+import Button from '../shared/Button';
 import { Col, Container, ImageStyle, Row } from '../styles/LayoutStyles';
 import { APP_IMAGES } from '../utils/Images';
 
 const BannerStyles = styled.div`
   height: 400px;
+  margin-top: 80px;
 
   h1 {
     margin: 0;
@@ -29,8 +31,29 @@ const BannerStyles = styled.div`
   }
 `;
 
+export const BannerButtonsStyles = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  a {
+    &:nth-child(2) {
+      padding: 0 2rem;
+    }
+  }
+`;
+
+const BannerImgHolderStyle = styled.div`
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  img {
+    width: 80%;
+  }
+`;
+
 const Banner = () => {
-  const { banner } = APP_IMAGES;
+  const { banner, android, appple } = APP_IMAGES;
   const { theme } = useToggleTheme();
 
   return (
@@ -49,9 +72,20 @@ const Banner = () => {
               It easier to schedule dinner with friends, a group study date, a
               birthday party, or anything in-between
             </p>
+            <BannerButtonsStyles>
+              <a href="#">
+                <img src={appple} />
+              </a>
+              <a href="#">
+                <img src={android} />
+              </a>
+              <Button variant="primary">Join for free</Button>
+            </BannerButtonsStyles>
           </Col>
           <Col size={6}>
-            <ImageStyle src={banner} alt="schedule image" />
+            <BannerImgHolderStyle>
+              <ImageStyle src={banner} alt="schedule image" />
+            </BannerImgHolderStyle>
           </Col>
         </Row>
       </Container>
