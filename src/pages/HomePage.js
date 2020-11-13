@@ -15,10 +15,10 @@ const HomePage = () => {
   return (
     <>
       <Banner />
-      <SectionStyle>
+      <SectionStyle id="features">
         <KeyFeatures />
       </SectionStyle>
-      <SectionStyle>
+      <SectionStyle id="pricing">
         <Pricing />
       </SectionStyle>
       <SectionStyle>
