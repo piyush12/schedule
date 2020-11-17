@@ -140,7 +140,7 @@ const PricingBoxStyle = styled.div`
   }
 `;
 
-const Pricing = () => {
+function Pricing() {
   return (
     <Container>
       <BoxFrameStyle direction="top" />
@@ -197,6 +197,6 @@ const Pricing = () => {
       <BoxFrameStyle direction="bottom" />
     </Container>
   );
-};
-
-export default Pricing;
+}
+//Pricing = ;
+export default React.memo(Pricing);
